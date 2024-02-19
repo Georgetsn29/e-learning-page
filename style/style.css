@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,16 +8,145 @@
     list-style-type: none;
 }
 
+body {
+    background: linear-gradient(to bottom, #FFFFFF 0%, #F0F1FF 100%);
+}
+
 footer > div,
 header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 16px;
 }
 
-section.welcome img {
+footer .logo,
+header nav .logo {
+    font-size: 28px;
+    font-family: plus jakarta sans;
+    font-weight: 900;
+    color: #13183F;
+}
+
+footer .header-button,
+header nav .header-button {
+    font-size: 16px;
+    line-height: 28px;
+    font-family: plus jakarta sans;
+    color: #ffffff;
+    background-color: #13183F;
+    padding-inline: 24px;
+    padding-block: 9px 11px;
+    border-radius: 28px;
+    font-weight: 700;
+}
+
+section.welcome {
+    margin-top: 38px;
+}
+
+section.welcome h1 {
+    color: #13183F;
+    font-size: 40px;
+    font-family: plus jakarta sans;
+    font-weight: 900;
+}
+
+section.welcome p {
+    font-family: plus jakarta sans;
+    font-size: 16px;
+    line-height: 26px;
+    color: #83869a;
+    margin-top: 26px;
+    font-weight: 500;
+}
+
+section.welcome a {
+    display: none;
+}
+
+section.welcome .phone-img {
     display: block;
     width: 100%;
+    margin-top: 106px;
+}
+
+section.welcome .tablet-img {
+    display: none;
+}
+
+.cards-section h2 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+    font-family: plus jakarta sans;
+    background: linear-gradient(to bottom, #ff6f48 0%, #f02aa6 100%);
+    padding-inline: 28px 29px;
+    padding-block: 24px 32px;
+    border-radius: 10px;
+}
+
+.cards-section .regular-cards {
+    margin-top: 16px;
+    margin-bottom: 80px;
+}
+
+.cards-section .regular-cards img {
+    margin-left: 28px;
+}
+
+.cards-section .regular-cards .reg-cards-inside {
+    margin-top: -34px;
+    background-color: #ffffff;
+    padding-bottom: 32px;
+    border-radius: 10px;
+}
+
+.cards-section .regular-cards .reg-cards-inside h3 {
+    font-family: plus jakarta sans;
+    font-size: 20px;
+    font-weight: 900;
+    color: #13183F;
+    padding-top: 56px;
+    padding-left: 28px;
+}
+
+.cards-section .regular-cards .reg-cards-inside p {
+    font-family: plus jakarta sans;
+    font-weight: 500;
+    font-size: 16px;
+    color: #83869a;
+    line-height: 26px;
+    margin-top: 16px;
+    padding-inline: 28px 29px;
+    margin-bottom: 24px;
+}
+
+.cards-section .regular-cards .reg-cards-inside a {
+    font-family: plus jakarta sans;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #f74780;
+    padding-left: 28px;
+}
+
+footer {
+    background-color: #13183F;
+}
+
+footer div {
+    padding-block: 36px;
+    padding-inline: 16px;
+}
+
+footer div .logo-ft{
+    color: #F0F1FF;
+}
+
+footer div .footer-btn {
+    background: linear-gradient(to bottom, #4851FF 0%, #f02aa6 100%);
 }
 
 .container {
@@ -25,8 +156,10 @@ section.welcome img {
 }
 
 @media only screen and (min-width: 768px) {
+
+
     .container {
-        max-width: 689px;
+        max-width: 1440px;
         margin: auto;
     }
 
@@ -38,12 +171,182 @@ section.welcome img {
     .cards-section .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
+
+
+    footer > div,
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header {
+        margin-top: 24px;
+    }
+    
+    footer .logo,
+    header nav .logo {
+        font-size: 28px;
+        font-family: plus jakarta sans;
+        font-weight: 900;
+        color: #13183F;
+    }
+    
+    footer .header-button,
+    header nav .header-button {
+        font-size: 16px;
+        line-height: 28px;
+        font-family: plus jakarta sans;
+        color: #ffffff;
+        background-color: #13183F;
+        padding-inline: 24px;
+        padding-block: 9px 11px;
+        border-radius: 28px;
+        font-weight: 700;
+    }
+    
+    section.welcome {
+        margin-top: 99px;
+    }
+
+    .welcome-left {
+        width: 398px;
+    }
+    
+    section.welcome h1 {
+        color: #13183F;
+        font-size: 40px;
+        font-family: plus jakarta sans;
+        font-weight: 900;
+    }
+    
+    section.welcome p {
+        font-family: plus jakarta sans;
+        font-size: 16px;
+        line-height: 26px;
+        color: #83869a;
+        margin-top: 26px;
+        font-weight: 500;
+        margin-bottom: 39px;
+    }
+    
+    section.welcome a {
+        display: block;
+        font-size: 16px;
+        font-family: plus jakarta sans;
+        font-weight: 700;
+        color: #FFFFFF;
+        line-height: 26px;
+        padding-block: 15px;
+        padding-inline: 38px 37px;
+        background: linear-gradient(to bottom, #ff6f48 0%, #f02aa6 100%);
+        border-radius: 31.5px;
+        width: 167px;
+    }
+    
+    section.welcome .phone-img {
+        display: none;
+    }
+    
+    section.welcome .tablet-img {
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 10px;
+    }
+
+    .cards-section {
+        margin-top: 186px;
+        margin-bottom: 86px;
+    }
+    
+    .cards-section h2 {
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 32px;
+        font-family: plus jakarta sans;
+        background: linear-gradient(to bottom, #ff6f48 0%, #f02aa6 100%);
+        padding-inline: 32px 21px;
+        padding-block: 56px 139px;
+        border-radius: 10px;
+        margin-top: 24px;
+    }
+    
+    .cards-section .regular-cards img {
+        margin-left: 32px;
+    }
+    
+    .cards-section .regular-cards .reg-cards-inside {
+        margin-top: -34px;
+        background-color: #ffffff;
+        padding-bottom: 32px;
+        border-radius: 10px;
+        margin-bottom: -73px;
+    }
+    
+    .cards-section .regular-cards .reg-cards-inside h3 {
+        font-family: plus jakarta sans;
+        font-size: 20px;
+        font-weight: 900;
+        color: #13183F;
+        padding-top: 56px;
+        padding-left: 32px;
+    }
+    
+    .cards-section .regular-cards .reg-cards-inside p {
+        font-family: plus jakarta sans;
+        font-weight: 500;
+        font-size: 16px;
+        color: #83869a;
+        line-height: 26px;
+        margin-top: 16px;
+        padding-inline: 32px 22px;
+        margin-bottom: 24px;
+    }
+    
+    .cards-section .regular-cards .reg-cards-inside a {
+        font-family: plus jakarta sans;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        color: #f74780;
+        padding-left: 32px;
+
+    }
+    
+    footer {
+        background-color: #13183F;
+        width: 100%;
+    }
+    
+    footer div {
+        padding-block: 36px;
+        padding-inline: 16px;
+    }
+    
+    footer div .logo-ft{
+        color: #F0F1FF;
+    }
+    
+    footer div .footer-btn {
+        background: linear-gradient(to bottom, #4851FF 0%, #f02aa6 100%);
+    }
+    
+    .container {
+        border: 1px solid red;
+        width: 100%;
+        padding-inline: 39px 40px;
+    }
+    
+
 }
 
 @media only screen and (min-width: 1440px) {
     .container {
-        max-width: 1110px;
+        max-width: 99999px;
     }
 
     .cards-section .container {
