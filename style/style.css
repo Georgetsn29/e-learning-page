@@ -75,6 +75,11 @@ section.welcome .tablet-img {
     display: none;
 }
 
+section.welcome .desktop-img {
+    display: none;
+}
+
+
 .cards-section h2 {
     color: #ffffff;
     font-size: 24px;
@@ -150,10 +155,27 @@ footer div .footer-btn {
 }
 
 .container {
-    border: 1px solid red;
     width: 100%;
     padding-inline:  16px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 768px) {
 
@@ -161,6 +183,7 @@ footer div .footer-btn {
     .container {
         max-width: 1440px;
         margin: auto;
+        padding-inline: 39px 40px;
     }
 
     .welcome .container {
@@ -174,37 +197,8 @@ footer div .footer-btn {
         gap: 10px;
     }
 
-
-    footer > div,
-    header nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
     header {
         margin-top: 24px;
-    }
-    
-    footer .logo,
-    header nav .logo {
-        font-size: 28px;
-        font-family: plus jakarta sans;
-        font-weight: 900;
-        color: #13183F;
-    }
-    
-    footer .header-button,
-    header nav .header-button {
-        font-size: 16px;
-        line-height: 28px;
-        font-family: plus jakarta sans;
-        color: #ffffff;
-        background-color: #13183F;
-        padding-inline: 24px;
-        padding-block: 9px 11px;
-        border-radius: 28px;
-        font-weight: 700;
     }
     
     section.welcome {
@@ -215,20 +209,7 @@ footer div .footer-btn {
         width: 398px;
     }
     
-    section.welcome h1 {
-        color: #13183F;
-        font-size: 40px;
-        font-family: plus jakarta sans;
-        font-weight: 900;
-    }
-    
     section.welcome p {
-        font-family: plus jakarta sans;
-        font-size: 16px;
-        line-height: 26px;
-        color: #83869a;
-        margin-top: 26px;
-        font-weight: 500;
         margin-bottom: 39px;
     }
     
@@ -257,22 +238,21 @@ footer div .footer-btn {
         top: 10px;
     }
 
+    section.welcome .desktop-img {
+        display: none;
+    }
+
     .cards-section {
         margin-top: 186px;
         margin-bottom: 86px;
     }
     
     .cards-section h2 {
-        color: #ffffff;
-        font-size: 24px;
-        font-weight: 900;
-        line-height: 32px;
-        font-family: plus jakarta sans;
-        background: linear-gradient(to bottom, #ff6f48 0%, #f02aa6 100%);
         padding-inline: 32px 21px;
         padding-block: 56px 139px;
         border-radius: 10px;
-        margin-top: 24px;
+        margin-top: 40px;
+        height: 259px;
     }
     
     .cards-section .regular-cards img {
@@ -281,75 +261,186 @@ footer div .footer-btn {
     
     .cards-section .regular-cards .reg-cards-inside {
         margin-top: -34px;
-        background-color: #ffffff;
-        padding-bottom: 32px;
-        border-radius: 10px;
         margin-bottom: -73px;
+        height: 259px;
     }
     
     .cards-section .regular-cards .reg-cards-inside h3 {
-        font-family: plus jakarta sans;
-        font-size: 20px;
-        font-weight: 900;
-        color: #13183F;
         padding-top: 56px;
         padding-left: 32px;
     }
     
     .cards-section .regular-cards .reg-cards-inside p {
-        font-family: plus jakarta sans;
-        font-weight: 500;
-        font-size: 16px;
-        color: #83869a;
-        line-height: 26px;
-        margin-top: 16px;
         padding-inline: 32px 22px;
         margin-bottom: 24px;
     }
     
     .cards-section .regular-cards .reg-cards-inside a {
-        font-family: plus jakarta sans;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 28px;
-        color: #f74780;
         padding-left: 32px;
-
     }
-    
-    footer {
-        background-color: #13183F;
-        width: 100%;
-    }
-    
-    footer div {
-        padding-block: 36px;
-        padding-inline: 16px;
-    }
-    
-    footer div .logo-ft{
-        color: #F0F1FF;
-    }
-    
-    footer div .footer-btn {
-        background: linear-gradient(to bottom, #4851FF 0%, #f02aa6 100%);
-    }
-    
-    .container {
-        border: 1px solid red;
-        width: 100%;
-        padding-inline: 39px 40px;
-    }
-    
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 1440px) {
     .container {
         max-width: 99999px;
+        width: 100%;
+        padding-inline:  165px;
     }
 
     .cards-section .container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1.5fr);
+        row-gap: 56px;
+        column-gap: 30px;
+    }
+
+    header {
+        margin-top: 24px;
+    }
+
+    footer > div,
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer .logo,
+    header nav .logo {
+        font-size: 36px;
+        font-family: plus jakarta sans;
+        font-weight: 900;
+        color: #13183F;
+    }
+
+    footer .header-button,
+    header nav .header-button {
+        font-size: 18px;
+        line-height: 28px;
+        font-family: plus jakarta sans;
+        color: #ffffff;
+        background-color: #13183F;
+        padding-inline: 32px 31px;
+        padding-block: 14px;
+        border-radius: 28px;
+        font-weight: 700;
+    }
+
+    section.welcome {
+        margin-top: 172px;
+    }
+
+    .welcome-left {
+        width: 457px;
+    }
+
+    section.welcome h1 {
+        color: #13183F;
+        font-size: 56px;
+        font-family: plus jakarta sans;
+        font-weight: 900;
+    }
+
+    section.welcome p {
+        font-family: plus jakarta sans;
+        font-size: 18px;
+        line-height: 26px;
+        color: #83869a;
+        margin-top: 29px;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+
+    section.welcome a {
+        display: block;
+        font-size: 16px;
+        font-family: plus jakarta sans;
+        font-weight: 700;
+        color: #FFFFFF;
+        line-height: 26px;
+        padding-block: 15px;
+        padding-inline: 38px 37px;
+        background: linear-gradient(to bottom, #ff6f48 0%, #f02aa6 100%);
+        border-radius: 31.5px;
+        width: 167px;
+    }
+
+    section.welcome .phone-img {
+        display: none;
+    }
+
+    section.welcome .tablet-img {
+        display: none;
+    }
+
+    section.welcome .desktop-img {
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .cards-section {
+        margin-top: 226px;
+        margin-bottom: 140px;
+    }
+
+    .cards-section h2 {
+        color: #ffffff;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 40px;
+        font-family: plus jakarta sans;
+        background: linear-gradient(to bottom, #ff6f48 0%, #f02aa6 100%);
+        padding-inline: 32px 21px;
+        padding-block: 56px 139px;
+        border-radius: 10px;
+        margin-top: 40px;
+        min-height: 322px;
+    }
+
+    .cards-section .regular-cards img {
+        margin-left: 32px;
+    }
+
+    .cards-section .regular-cards .reg-cards-inside {
+        background-color: #ffffff;
+        margin-top: -34px;
+        margin-bottom: -73px;
+        min-height: 322px;
+    }
+
+    .cards-section .regular-cards .reg-cards-inside h3 {
+        font-family: plus jakarta sans;
+        font-size: 24px;
+        font-weight: 900;
+        color: #13183F;
+        padding-top: 64px;
+        padding-left: 32px;
+       
+    }
+
+    .cards-section .regular-cards .reg-cards-inside p {
+        font-family: plus jakarta sans;
+        font-weight: 500;
+        font-size: 18px;
+        color: #83869a;
+        line-height: 28px;
+        margin-top: 24px;
+        padding-inline: 32px 32px;
+        margin-bottom: 24px;
     }
 }
