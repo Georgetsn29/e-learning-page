@@ -26,6 +26,7 @@ header nav .logo {
     font-family: plus jakarta sans;
     font-weight: 900;
     color: #13183F;
+    transition: all 0.3s;
 }
 
 footer .header-button,
@@ -39,6 +40,7 @@ header nav .header-button {
     padding-block: 9px 11px;
     border-radius: 28px;
     font-weight: 700;
+    transition: all 0.3s;
 }
 
 section.welcome {
@@ -135,6 +137,7 @@ section.welcome .desktop-img {
     line-height: 28px;
     color: #f74780;
     padding-left: 28px;
+    transition: all 0.3s;
 }
 
 footer {
@@ -152,6 +155,7 @@ footer div .logo-ft{
 
 footer div .footer-btn {
     background: linear-gradient(to bottom, #4851FF 0%, #f02aa6 100%);
+    transition: all 0.3s;
 }
 
 .container {
@@ -176,7 +180,7 @@ footer div .footer-btn {
 
 
 
-
+/*! Tablet !*/
 @media only screen and (min-width: 768px) {
 
 
@@ -200,7 +204,11 @@ footer div .footer-btn {
     header {
         margin-top: 24px;
     }
-    
+
+    header nav .header-button {
+        z-index: 111111111;
+    }
+
     section.welcome {
         margin-top: 99px;
     }
@@ -225,6 +233,7 @@ footer div .footer-btn {
         background: linear-gradient(to bottom, #ff6f48 0%, #f02aa6 100%);
         border-radius: 31.5px;
         width: 167px;
+        transition: all 0.3s;
     }
     
     section.welcome .phone-img {
@@ -236,6 +245,7 @@ footer div .footer-btn {
         position: absolute;
         right: 0px;
         top: 10px;
+        z-index: 1;
     }
 
     section.welcome .desktop-img {
@@ -293,7 +303,7 @@ footer div .footer-btn {
 
 
 
-
+/*! Desktop !*/
 @media only screen and (min-width: 1440px) {
     .container {
         max-width: 99999px;
@@ -337,6 +347,7 @@ footer div .footer-btn {
         padding-block: 14px;
         border-radius: 28px;
         font-weight: 700;
+        z-index: 111111111;
     }
 
     section.welcome {
@@ -376,6 +387,7 @@ footer div .footer-btn {
         background: linear-gradient(to bottom, #ff6f48 0%, #f02aa6 100%);
         border-radius: 31.5px;
         width: 167px;
+        transition: all 0.3s;
     }
 
     section.welcome .phone-img {
@@ -391,6 +403,8 @@ footer div .footer-btn {
         position: absolute;
         right: 0px;
         top: 0px;
+        overflow: hidden;
+        z-index: 1;
     }
 
     .cards-section {
@@ -434,13 +448,39 @@ footer div .footer-btn {
     }
 
     .cards-section .regular-cards .reg-cards-inside p {
-        font-family: plus jakarta sans;
-        font-weight: 500;
-        font-size: 18px;
-        color: #83869a;
-        line-height: 28px;
         margin-top: 24px;
         padding-inline: 32px 32px;
         margin-bottom: 24px;
     }
+}
+
+
+
+
+
+
+
+
+
+
+/*! Hover !*/
+.header-button:hover {
+    background-color: #666CA3;
+}
+
+footer .logo:hover,
+header nav .logo:hover {
+    color: #666CA3;
+}
+
+section.welcome a:hover {
+    background: linear-gradient(to bottom, rgba(255, 111, 72, .5) 0%, rgba(240, 42, 166, .5) 100%);
+}
+
+footer div .footer-btn:hover {
+    filter: brightness(120%);
+}
+
+.cards-section .regular-cards .reg-cards-inside a:hover {
+    color: #FFA7C3;
 }
